@@ -1,0 +1,54 @@
+@media (max-width: 600px) {
+  .text {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .column-1 {
+    width: 100%;
+  }
+  
+  .column-2 {
+    max-width: 100%;
+    
+  }
+  
+  .card {
+    background-color: rgb(0, 119, 255);
+    color: #f8f8fa;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-size: 1rem;
+  }
+}
+
+.column-1 {
+  max-width: 45%;
+  margin-right: 5%;
+}
+
+.column-2 {
+  max-width: 45%;
+  margin-left: 5%;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  background: rgb(0, 68, 255);
+  color: #f8f8fa;
+  width: 150px;
+  margin: 2rem auto;
+  padding: 0.5rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  transition: all 0.5s;
+}
+
+.cta:hover {
+  border-color: rgb(0, 68, 255);
+  background: transparent;
+  color: rgb(0, 68, 255);
+}

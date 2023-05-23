@@ -22,13 +22,9 @@ const Home = () => {
     try {
       const querySnapShot = await getDocs(queryRef);
 
-      // const q = query(collectionRef, orderBy("createdAt"));
-      // q.doc.map((doc)=> console.log(doc.data()))
-      // console.log(q);
       const data = querySnapShot.docs.map((doc) => {
         const postData = doc.data();
 
-        // console.log(postData.createdAt.);
         const timestamp = postData.createdAt.toDate();
 
         return {
@@ -37,11 +33,6 @@ const Home = () => {
           timestamp,
         };
       });
-      // const data = querySnapShot.docs.map((doc) => ({
-      //   id: doc.id,
-      //   ...doc.data(),
-      // }));
-      // const data = querySnapShot.docs.map((doc) => doc.data());
 
       setCollectionData(data);
       setLoading(false);
@@ -88,7 +79,6 @@ const Home = () => {
                   </span>
                 </div>
 
-                {/* <p>{i.details.slice(0, 150)} ...</p> */}
                 <div className="bottom">
                   <span>{i.timestamp.toDateString()}</span>
                   <Link to={`/home/${i.details.slice(0, 20)}`} state={i}>

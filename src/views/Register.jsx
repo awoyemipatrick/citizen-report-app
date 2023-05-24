@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/login.css";
 
@@ -38,7 +38,7 @@ const Register = () => {
     <main className="login">
       <div className="container">
         <div className="form__container">
-          <h1>Welcome to Citizens Watch</h1>
+          <h1>Welcome to Citizens Report</h1>
           <span>enter your email and password to Register</span>
           <form onSubmit={handleSubmit}>
             <label htmlFor="email">Email</label>

@@ -6,14 +6,16 @@
   margin: 0;
   box-sizing: border-box;
   list-style-type: none;
+  list-style: none;
+  text-decoration: none;
 }
-
-/* .container {
-  width: 100%;
-  margin: 0 auto;
-} */
 
 main {
   font-family: "Outfit", sans-serif;
   /* font-family: "Saira Semi Condensed", sans-serif; */
+}
+
+
+.container {
+  margin-top: 15%;
 }

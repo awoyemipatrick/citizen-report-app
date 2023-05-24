@@ -53,7 +53,7 @@ const Post = () => {
     <main>
       <Nav />
       <div className="container box">
-        <div className="flex flex_">
+        <div className="flex flex_ ">
           <p>Your reports</p>
           <button onClick={() => signOut(auth)}>Logout</button>
         </div>
@@ -71,7 +71,7 @@ const Post = () => {
         ) : (
           userPosts.map((i) => {
             return (
-              <div className="report__card">
+              <div key={i} className="report__card">
                 <p>{i.details.slice(0, 200)} ...</p>
                 <div className="bottom">
                   <span>{i.timestamp.toDateString()}</span>

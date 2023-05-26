@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import image1 from "../assets/report.png";
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
